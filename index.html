@@ -1,13 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Página</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Projeto</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Olá, mundo!</h1>
-  <p>Minha primeira página criada</p>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+    <header class="header">
+
+        <div class="logo">
+            <span>Meu </span>Projeto
+        </div>
+
+        <!-- BARRA DE PESQUISA -->
+        <div class="area-pesquisa">
+
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="O que você está procurando?"
+            >
+
+            <button onclick="pesquisarProdutos()">
+                🔍
+            </button>
+
+        </div>
+
+        <!-- CARRINHO -->
+        <button class="botao-carrinho" onclick="abrirCarrinho()">
+
+            🛒
+
+            <span id="quantidadeCarrinho">
+                0
+            </span>
+
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner">
+
+            <div class="banner-conteudo">
+
+                <h1>
+                    Encontre tudo para sua casa
+                </h1>
+
+                <p>
+                    Eletrodomésticos de qualidade para facilitar o seu dia a dia.
+                </p>
+
+                <button onclick="rolarParaProdutos()">
+                    Ver produtos
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORIAS
+        ========================== -->
+        <section class="categorias">
+
+            <h2>
+                Categorias
+            </h2>
+
+            <div class="lista-categorias">
+
+                <button onclick="filtrarCategoria('todos')">
+                    Todos
+                </button>
+
+                <button onclick="filtrarCategoria('geladeiras')">
+                    Geladeiras
+                </button>
+
+                <button onclick="filtrarCategoria('fogoes')">
+                    Fogões
+                </button>
+
+                <button onclick="filtrarCategoria('lavadoras')">
+                    Lavadoras
+                </button>
+
+                <button onclick="filtrarCategoria('microondas')">
+                    Micro-ondas
+                </button>
+
+                <button onclick="filtrarCategoria('eletroportateis')">
+                    Eletroportáteis
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUTOS
+        ========================== -->
+        <section class="secao-produtos" id="produtos">
+
+            <div class="titulo-produtos">
+
+                <h2>
+                    Nossos produtos
+                </h2>
+
+                <p>
+                    Confira nossos produtos
+                </p>
+
+            </div>
+
+
+            <!--
+                OS PRODUTOS SERÃO
+                INSERIDOS PELO main.js
+            -->
+
+            <div
+                class="lista-produtos"
+                id="listaProdutos"
+            >
+            </div>
+
+
+            <!-- PAGINAÇÃO -->
+
+            <div
+                class="paginacao"
+                id="paginacao"
+            >
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         MODAL DO PRODUTO
+    ========================== -->
+
+    <div
+        class="modal"
+        id="modalProduto"
+    >
+
+        <div class="modal-conteudo">
+
+            <button
+                class="fechar-modal"
+                onclick="fecharProduto()"
+            >
+                ×
+            </button>
+
+            <div id="informacoesProduto">
+                <!-- Informações inseridas pelo JavaScript -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MODAL DO CARRINHO
+    ========================== -->
+
+    <div
+        class="modal"
+        id="modalCarrinho"
+    >
+
+        <div class="modal-conteudo carrinho-conteudo">
+
+            <button
+                class="fechar-modal"
+                onclick="fecharCarrinho()"
+            >
+                ×
+            </button>
+
+            <h2>
+                Seu carrinho
+            </h2>
+
+            <div
+                id="itensCarrinho"
+                class="itens-carrinho"
+            >
+                <!-- Produtos do carrinho aparecem aqui -->
+            </div>
+
+            <div class="total-carrinho">
+
+                <strong>
+                    Total:
+                </strong>
+
+                <span id="totalCarrinho">
+                    R$ 0,00
+                </span>
+
+            </div>
+
+            <button
+                class="botao-finalizar"
+                onclick="finalizarCompra()"
+            >
+                Comprar pelo WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-conteudo">
+
+            <div>
+
+                <h3>
+                    EletroLar
+                </h3>
+
+                <p>
+                    Eletrodomésticos para sua casa.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Atendimento
+                </h3>
+
+                <p>
+                    Entre em contato pelo WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Informações
+                </h3>
+
+                <p>
+                    Produtos sujeitos à disponibilidade.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Meu Projeto. Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>
