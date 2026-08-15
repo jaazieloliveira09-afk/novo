@@ -2,7 +2,7 @@
 // CONFIGURAÇÕES
 // =========================
 
-const numeroWhatsApp = "5594999999999";
+const numeroWhatsApp = "5594988171056";
 
 const produtos = [
 
@@ -127,7 +127,7 @@ let carrinho = [];
 
 let paginaAtual = 1;
 
-const produtosPorPagina = 6;
+const produtosPorPagina = 8;
 
 
 // =========================
