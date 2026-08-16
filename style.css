@@ -766,3 +766,11 @@ body {
     }
 
 }
+
+button,
+a,
+img,
+input,
+select {
+    -webkit-tap-highlight-color: transparent;
+}
