@@ -208,14 +208,14 @@ function mostrarProdutos() {
                         class="botao-comprar"
                         onclick="comprarWhatsApp(${produto.id})"
                     >
-                        Comprar pelo WhatsApp
+                        Comprar
                     </button>
 
                     <button
                         class="botao-carrinho-produto"
                         onclick="adicionarCarrinho(${produto.id})"
                     >
-                        🛒 Adicionar ao carrinho
+                        🛒Carrinho
                     </button>
 
                 </div>
@@ -450,6 +450,8 @@ function abrirProduto(id) {
     document
         .getElementById("modalProduto")
         .classList.add("ativo");
+        
+        document.body.style.overflow = "hidden";
 
 }
 
@@ -463,6 +465,8 @@ function fecharProduto() {
     document
         .getElementById("modalProduto")
         .classList.remove("ativo");
+        
+        document.body.style.overflow = "";
 
 }
 
@@ -623,6 +627,8 @@ function abrirCarrinho() {
     document
         .getElementById("modalCarrinho")
         .classList.add("ativo");
+        
+        document.body.style.overflow = "hidden";
 
 }
 
@@ -636,6 +642,8 @@ function fecharCarrinho() {
     document
         .getElementById("modalCarrinho")
         .classList.remove("ativo");
+        
+        document.body.style.overflow = "";
 
 }
 
