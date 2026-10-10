@@ -1,310 +1,394 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Jaaziel Cardozo, com formação em Análise e Desenvolvimento de Sistemas, certificações financeiras e interesse em instituições financeiras.">
 
-    <title>Meu Projeto</title>
+  <meta name="theme-color" content="#0b1730">
 
-    <link rel="stylesheet" href="style.css">
+  <title>Jaaziel Cardozo | Perfil Profissional</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Navegação principal">
 
-    <!-- =========================
-         CABEÇALHO
-    ========================== -->
-    <header class="header">
+      <a href="#inicio" class="logo" aria-label="Jaaziel Cardozo - início">
+        <span class="logo-nome">Jaaziel</span>
+        <span class="logo-linha"></span>
+        <span class="logo-sobrenome">CARDOZO</span>
+      </a>
 
-        <div class="logo">
-            <span>Meu </span>Projeto
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#competencias">Competências</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato" class="nav-cta">Contato <span>↗</span></a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+          <span class="eyebrow">
+            <span class="status-dot"></span>
+            PERFIL PROFISSIONAL
+          </span>
+
+          <h1>
+            Tecnologia,<br>
+            análise e <span class="text-accent">relacionamento.</span>
+          </h1>
+
+          <p class="hero-description">
+            Sou formado em Análise e Desenvolvimento de Sistemas
+            e busco oportunidades para desenvolver minha carreira
+            no setor financeiro, unindo organização, raciocínio
+            analítico e interesse pelo universo dos negócios.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#sobre" class="button button-primary">
+              Conheça meu perfil <span>↘</span>
+            </a>
+            <a href="#contato" class="button button-secondary">
+              Entrar em contato
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="note-line"></span>
+            <span>Aprendizado contínuo · Compromisso · Desenvolvimento profissional</span>
+          </div>
         </div>
 
-        <!-- BARRA DE PESQUISA -->
-        <div class="area-pesquisa">
+        <div class="hero-visual reveal">
+          <div class="visual-card">
+            <div class="visual-top">
+              <span class="visual-label">MEU PERFIL</span>
+              <span class="visual-symbol">JC.</span>
+            </div>
 
-            <input
-                type="text"
-                id="campoPesquisa"
-                placeholder="O que você está procurando?"
-            >
+            <div class="visual-main">
+              <div class="visual-icon">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <circle cx="32" cy="32" r="29" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M13 39L25 27L34 35L51 17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M41 17H51V27" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
 
-            <button onclick="pesquisarProdutos()">
-                🔍
-            </button>
+              <p class="visual-overline">FORMAÇÃO + CONHECIMENTO</p>
+              <h2>Uma visão que conecta tecnologia e negócios.</h2>
+              <p class="visual-description">
+                Organização, análise de informações e disposição
+                para aprender e evoluir.
+              </p>
+            </div>
 
+            <div class="visual-footer">
+              <span>PERFIL PROFISSIONAL</span>
+              <span>01 — 03</span>
+            </div>
+          </div>
+
+          <div class="floating-card floating-top">
+            <span class="floating-icon">↗</span>
+            <div>
+              <strong>Visão analítica</strong>
+              <small>Foco em informações e processos</small>
+            </div>
+          </div>
+
+          <div class="floating-card floating-bottom">
+            <span class="floating-icon">✓</span>
+            <div>
+              <strong>Desenvolvimento contínuo</strong>
+              <small>Conhecimento em evolução</small>
+            </div>
+          </div>
         </div>
 
-        <!-- CARRINHO -->
-        <button class="botao-carrinho" onclick="abrirCarrinho()">
+      </div>
 
-            🛒
+      <div class="hero-bottom container">
+        <span>TECNOLOGIA</span>
+        <span class="hero-bottom-separator"></span>
+        <span>FINANÇAS</span>
+        <span class="hero-bottom-separator"></span>
+        <span>RELACIONAMENTO</span>
+      </div>
+    </section>
 
-            <span id="quantidadeCarrinho">
-                0
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">01 / SOBRE MIM</span>
+          <h2>Conhecimento técnico com foco no <span class="text-accent">desenvolvimento profissional.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Minha formação em Análise e Desenvolvimento de Sistemas
+              contribuiu para desenvolver meu interesse por tecnologia,
+              organização de informações e compreensão de processos.
+            </p>
+
+            <p>
+              Tenho interesse em construir uma trajetória no setor
+              financeiro, especialmente em ambientes que valorizem
+              o atendimento, a responsabilidade, o aprendizado e
+              a construção de relacionamentos profissionais.
+            </p>
+
+            <p>
+              Busco oportunidades para ampliar meus conhecimentos,
+              contribuir com a equipe e desenvolver novas competências
+              de acordo com as necessidades da instituição.
+            </p>
+          </div>
+
+          <div class="principles reveal">
+            <article class="principle-card">
+              <span class="principle-number">01</span>
+              <div>
+                <h3>Organização</h3>
+                <p>Atenção aos processos, às informações e às responsabilidades do trabalho.</p>
+              </div>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">02</span>
+              <div>
+                <h3>Raciocínio analítico</h3>
+                <p>Interesse em compreender situações, analisar informações e buscar soluções.</p>
+              </div>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number">03</span>
+              <div>
+                <h3>Aprendizado contínuo</h3>
+                <p>Disposição para adquirir conhecimentos e evoluir profissionalmente.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competencias">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">02 / COMPETÊNCIAS</span>
+          <h2>Conhecimentos que fazem parte da minha <span class="text-accent">trajetória.</span></h2>
+          <p>Uma combinação de conhecimentos técnicos e competências profissionais.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-icon">01</span>
+            <h3>Tecnologia e sistemas</h3>
+            <p>Formação em ADS, lógica de programação e compreensão de sistemas digitais.</p>
+            <div class="skill-tags">
+              <span>ADS</span>
+              <span>Informática</span>
+              <span>Sistemas</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">02</span>
+            <h3>Organização e processos</h3>
+            <p>Experiência com rotinas operacionais, organização de documentos e apoio às atividades de trabalho.</p>
+            <div class="skill-tags">
+              <span>Organização</span>
+              <span>Rotinas</span>
+              <span>Documentos</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">03</span>
+            <h3>Conhecimentos financeiros</h3>
+            <p>Certificações CPA-10 e CPA-20 e interesse em aprofundar conhecimentos sobre o mercado financeiro.</p>
+            <div class="skill-tags">
+              <span>CPA-10</span>
+              <span>CPA-20</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon">04</span>
+            <h3>Relacionamento profissional</h3>
+            <p>Valorização da comunicação respeitosa, do trabalho em equipe e da responsabilidade.</p>
+            <div class="skill-tags">
+              <span>Comunicação</span>
+              <span>Equipe</span>
+              <span>Responsabilidade</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="formacao">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">03 / FORMAÇÃO E CERTIFICAÇÕES</span>
+          <h2>Uma base para continuar <span class="text-accent">evoluindo.</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">FORMAÇÃO ACADÊMICA</span>
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <p>Ensino superior concluído</p>
+              <span class="timeline-detail">Tecnologia · Sistemas · Análise</span>
+            </div>
+            <span class="timeline-index">01</span>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">CERTIFICAÇÃO FINANCEIRA</span>
+              <h3>CPA-10</h3>
+              <p>Certificação informada no perfil profissional.</p>
+              <span class="timeline-detail">Conhecimentos do mercado financeiro</span>
+            </div>
+            <span class="timeline-index">02</span>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">CERTIFICAÇÃO FINANCEIRA</span>
+              <h3>CPA-20</h3>
+              <p>Certificação informada no perfil profissional.</p>
+              <span class="timeline-detail">Conhecimentos de investimentos</span>
+            </div>
+            <span class="timeline-index">03</span>
+          </article>
+        </div>
+
+        <p class="certification-note">
+          Nota: mantenha as certificações apresentadas de acordo com
+          sua situação atual e as regras vigentes da entidade certificadora.
+        </p>
+      </div>
+    </section>
+
+    <section class="section professional-section">
+      <div class="container professional-panel reveal">
+        <div>
+          <span class="eyebrow">OBJETIVO PROFISSIONAL</span>
+          <h2>Pronto para transformar conhecimento em contribuição.</h2>
+          <p>
+            Busco oportunidades em que eu possa aprender, colaborar com
+            a equipe e construir uma carreira consistente no setor financeiro.
+          </p>
+        </div>
+
+        <a href="#contato" class="button button-light">
+          Vamos conversar <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <span class="eyebrow">04 / CONTATO</span>
+          <h2>Vamos iniciar uma <span class="text-accent">conversa?</span></h2>
+          <p>
+            Estou aberto a oportunidades profissionais e conexões
+            relacionadas ao setor financeiro e à tecnologia.
+          </p>
+        </div>
+
+        <div class="contact-links reveal">
+          <!-- Substitua os links de exemplo pelos seus contatos reais. -->
+
+          <a class="contact-item" href="mailto:SEUEMAIL@EXEMPLO.COM">
+            <span class="contact-icon">@</span>
+            <span>
+              <small>E-MAIL</small>
+              <strong>Enviar uma mensagem</strong>
             </span>
+            <span class="contact-arrow">↗</span>
+          </a>
 
-        </button>
+          <a class="contact-item"
+             href="https://www.linkedin.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span class="contact-icon">in</span>
+            <span>
+              <small>LINKEDIN</small>
+              <strong>Perfil profissional</strong>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
 
-    </header>
-
-
-    <!-- =========================
-         CONTEÚDO PRINCIPAL
-    ========================== -->
-    <main>
-
-        <!-- BANNER -->
-        <section class="banner">
-
-            <div class="banner-conteudo">
-
-                <h1>
-                    Encontre tudo para sua casa
-                </h1>
-
-                <p>
-                    Eletrodomésticos de qualidade para facilitar o seu dia a dia.
-                </p>
-
-                <button onclick="rolarParaProdutos()">
-                    Ver produtos
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CATEGORIAS
-        ========================== -->
-        <section class="categorias">
-
-            <h2>
-                Categorias
-            </h2>
-
-            <div class="lista-categorias">
-
-                <button onclick="filtrarCategoria('todos')">
-                    Todos
-                </button>
-
-                <button onclick="filtrarCategoria('geladeiras')">
-                    Geladeiras
-                </button>
-
-                <button onclick="filtrarCategoria('fogoes')">
-                    Fogões
-                </button>
-
-                <button onclick="filtrarCategoria('lavadoras')">
-                    Lavadoras
-                </button>
-
-                <button onclick="filtrarCategoria('microondas')">
-                    Micro-ondas
-                </button>
-
-                <button onclick="filtrarCategoria('eletroportateis')">
-                    Eletroportáteis
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PRODUTOS
-        ========================== -->
-        <section class="secao-produtos" id="produtos">
-
-            <div class="titulo-produtos">
-
-                <h2>
-                    Nossos produtos
-                </h2>
-
-                <p>
-                    Confira nossos produtos
-                </p>
-
-            </div>
-
-
-            <!--
-                OS PRODUTOS SERÃO
-                INSERIDOS PELO main.js
-            -->
-
-            <div
-                class="lista-produtos"
-                id="listaProdutos"
-            >
-            </div>
-
-
-            <!-- PAGINAÇÃO -->
-
-            <div
-                class="paginacao"
-                id="paginacao"
-            >
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         MODAL DO PRODUTO
-    ========================== -->
-
-    <div
-        class="modal"
-        id="modalProduto"
-    >
-
-        <div class="modal-conteudo">
-
-            <button
-                class="fechar-modal"
-                onclick="fecharProduto()"
-            >
-                ×
-            </button>
-
-            <div id="informacoesProduto">
-                <!-- Informações inseridas pelo JavaScript -->
-            </div>
-
+          <a class="contact-item"
+             href="https://wa.me/55SEUNUMERO"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span class="contact-icon">W</span>
+            <span>
+              <small>WHATSAPP</small>
+              <strong>Entrar em contato</strong>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
         </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#inicio" class="logo footer-logo" aria-label="Voltar ao início">
+        <span class="logo-nome">Jaaziel</span>
+        <span class="logo-linha"></span>
+        <span class="logo-sobrenome">CARDOZO</span>
+      </a>
+
+      <p>Perfil profissional · <span id="current-year"></span></p>
+
+      <a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
     </div>
-
-
-    <!-- =========================
-         MODAL DO CARRINHO
-    ========================== -->
-
-    <div
-        class="modal"
-        id="modalCarrinho"
-    >
-
-        <div class="modal-conteudo carrinho-conteudo">
-
-            <button
-                class="fechar-modal"
-                onclick="fecharCarrinho()"
-            >
-                ×
-            </button>
-
-            <h2>
-                Seu carrinho
-            </h2>
-
-            <div
-                id="itensCarrinho"
-                class="itens-carrinho"
-            >
-                <!-- Produtos do carrinho aparecem aqui -->
-            </div>
-
-            <div class="total-carrinho">
-
-                <strong>
-                    Total:
-                </strong>
-
-                <span id="totalCarrinho">
-                    R$ 0,00
-                </span>
-
-            </div>
-
-            <button
-                class="botao-finalizar"
-                onclick="finalizarCompra()"
-            >
-                Comprar pelo WhatsApp
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
-
-    <footer class="footer">
-
-        <div class="footer-conteudo">
-
-            <div>
-
-                <h3>
-                    EletroLar
-                </h3>
-
-                <p>
-                    Eletrodomésticos para sua casa.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h3>
-                    Atendimento
-                </h3>
-
-                <p>
-                    Entre em contato pelo WhatsApp.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h3>
-                    Informações
-                </h3>
-
-                <p>
-                    Produtos sujeitos à disponibilidade.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            © 2026 Meu Projeto. Todos os direitos reservados.
-
-        </div>
-
-    </footer>
-
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
-    <script src="main.js"></script>
-
+  </footer>
 </body>
-
 </html>
