@@ -1152,9 +1152,14 @@ a:focus-visible {
   max-width: 700px;
 }
 
-
 .about-grid {
   text-align: justify;
   line-height: 1.8;
-  max-width: 700px;
+  width: 100%;
+  max-width: none;
+}
+
+.about-text {
+  width: 100%;
+  max-width: none;
 }
