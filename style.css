@@ -839,17 +839,17 @@ a:focus-visible {
   border-color: var(--blue);
 }
 
-/* ANIMAÇÕES */
+/* ANIMAÇÕES DESATIVADAS */
 
 .reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 /* RESPONSIVIDADE */
